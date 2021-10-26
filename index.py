@@ -1,16 +1,7 @@
 from flask import Flask, render_template
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/templates/static')
 
-"""
-@app.route('/')
-def principal():
-    return 'welcome'
-
-@app.route('/contacto')
-def contacto():
-    return "esta es la pagina de contactos"
-"""
 
 @app.route('/')     # la barra sin ningun nombre indica la ruta raíz
 def principal():                # llama un metodo 'principal'
