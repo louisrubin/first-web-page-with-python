@@ -18,6 +18,8 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <!--
@@ -29,21 +31,31 @@
           <li class="nav-item">
             <a class="nav-link text-light px-3" href="{{ url_for('mostrar_lenguajes')}}">Lenguajes</a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link text-light px-3" href="{{ url_for('contacto')}}">Contacto</a>
           </li>
+
           <li class="nav-item dropdown">
+
             <a class="nav-link dropdown-toggle text-light px-3" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Idioma
             </a>
+
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item" href="#">Español</a></li>
               <li><a class="dropdown-item" href="#">Inglés</a></li>
             </ul>
+
           </li>
         </ul>
       </div>
+
+      
+
     </div>
+
+    
   </nav>
 
 
@@ -51,6 +63,13 @@
         {% block body %}
 
         {% endblock %}
+        
+
+        <div class="vstack gap-2 col-md-3 mx-auto">
+          <button type="button" class="btn btn-secondary">Save changes</button>
+          <button type="button" class="btn btn-outline-secondary">Cancel</button>
+        </div>
+
     </div>
     
 
